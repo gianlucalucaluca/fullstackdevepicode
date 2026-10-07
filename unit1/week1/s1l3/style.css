@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #222222;
+    background-color: #fafafa;
+}
+
+#site-header {
+    background-color: hsl(220, 40%, 25%);
+    background-image: url(https://picsum.photos/seed/picsum/1240/768);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+#site-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.tagline {
+    color: rgb(244 74 74);
+    font-style: italic;
+}
+
+nav a {
+    color: hsl(67, 98%, 26%);
+    font-weight: bold;
+    line-height: 3;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: hsl(220, 59%, 30%);
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #1F3D7A;
+    text-align: left;
+}
+
+#chisono {
+    background-color: #ffffff;
+    text-align: justify;
+}
+
+#chisono p:first-of-type {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #1F3D7A;
+}
+
+.skill-list li:nth-child(odd) {
+    background-color: #f3f5fa;
+}
+
+.skill-list li:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.skill-list li:first-child {
+    font-weight: bold;
+}
+
+.project:nth-of-type(odd) {
+    background-color: #fbf8ef;
+}
+
+.project:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+label {
+    font-weight: bold;
+    color: #1F3D7A;
+}
+
+input,
+textarea {
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    width: 60%;
+    background-color: #f5f5f5;
+}
+
+#consenso {
+    width: auto;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #232323;
+    color: #ffffff;
+}
+
+button {
+    color: #ffffff;
+    background-color: hsl(220, 60%, 30%);
+    font-weight: bold;
+    width: 30%;
+}
+
+button:hover {
+    background-color: hsl(220, 60%, 45%);
+    color: #fbf8ef;
+}
+
+#site-footer {
+    background-color: #172136;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
+}
