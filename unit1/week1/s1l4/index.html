@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gianluca Fatigati</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header id="site-header">
+    <h1>Gianluca Fatigati</h1>
+    <p class="tagline">
+      <strong>Studente Full Stack</strong> - corso Epicode 2026
+    </p>
+
+    <nav>
+      <ul>
+        <li><a href="#chisono">Chi sono</a></li>
+        <li><a href="#competenze">Competenze</a></li>
+        <li><a href="#progetti">Progetti</a></li>
+        <li><a href="#esperienze">Esperienze</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="chisono">
+      <h2>Chi Sono</h2>
+      <img class="avatar" src="https://placehold.co/200x200" alt="descrizione testuale">
+      <p>Mi chiamo Gianluca Fatigati e sto imparando a programmare. Studio sviluppo web con <strong>Epicode</strong> e
+        ogni giorno aggiungo qualcosa di nuovo a questa pagina. Mi piace lavorare in gruppo, leggere documentazione
+        tecnica e capire come funzionano le cose.</p>
+
+      <p>Vivo a Caserta. Ho una formazione precedente <i>umanistica-digitale</i> e ora sto cambiando settore. Cerco un
+        primo ruolo come sviluppatore frontend.</p>
+    </section>
+
+    <section id="competenze">
+      <h2>Competenze</h2>
+      <p>Le tecnologie che vedo durante le prime settimane di corso.</p>
+
+      <ul class="skill-list">
+        <li>HTML - struttura della pagina</li>
+        <li>CSS - stile e impaginazione</li>
+        <li>Git e GitHub - versionamento del codice</li>
+        <li>Visual Studio Code - editor di lavoro</li>
+      </ul>
+    </section>
+
+    <section id="progetti">
+      <h2>Progetti</h2>
+      <p>I vari lavori fatti durante le prime settimane di corso.</p>
+
+      <article class="project">
+        <h3>Pagina ricetta</h3>
+        <p>Una Pagina con titolo, ingredienti e procedura. Esercizio di markup semantico applicato a un contenuto reale.
+        </p>
+        <p><a href="#">Vedi su GitHub</a></p>
+      </article>
+
+      <article class="project">
+        <h3>Card di presentazione</h3>
+
+        <p>Un biglietto digitale con nome, ruolo e link ai social. Esercizio di sintesi sulla struttura HTML.</p>
+        <p><a href="#">Vedi su GitHub</a></p>
+      </article>
+    </section>
+
+    <section id="esperienze">
+      <h2>Esperienze</h2>
+      <p>Il mio percorso di studio e lavoro fino ad oggi.</p>
+
+      <table>
+        <caption>Studio e lavoro</caption>
+        <thead>
+          <tr>
+            <th scope="col">Anno</th>
+            <th scope="col">Ruolo</th>
+            <th scope="col">Azienda/Scuola</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>2026</td>
+            <td>Digitize Technician</td>
+            <td>Grafiche E. Gaspari Srl (BO)</td>
+          </tr>
+
+          <tr>
+            <td>2025</td>
+            <td>Digitize Technician</td>
+            <td>Immagine ritrovata (BO)</td>
+          </tr>
+
+          <tr>
+            <td>2022</td>
+            <td>Studente</td>
+            <td>Accademia di belle arti di Napoli (NA)</td>
+          </tr>
+
+          <tr>
+            <td>2017</td>
+            <td>Studente</td>
+            <td>Liceo Luigi Garofano (CE)</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </section>
+
+    <section id="contatti">
+      <h2>Contattami</h2>
+      <p>Contattami qui!</p>
+      <form action="#" method="post">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Mario Rossi" required>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="mario.rossi@gmail.com" required>
+        </div>
+
+        <div>
+          <label for="motivo">Motivo del contatto</label>
+          <select name="motivo" id="motivo">
+            <option value="collaborazione">Collaborazione</option>
+            <option value="info">Info</option>
+            <option value="reclamo">Reclamo</option>
+            <option value="assistenza">Assistenza</option>
+          </select>
+        </div>
+
+
+        <div>
+          <label for="data">Data preferita</label>
+          <input type="date" id="data" name="data">
+        </div>
+
+        <div>
+          <label for="messaggio">Messaggio</label>
+          <textarea placeholder="Digita qui il tuo messaggio!" rows="5" required name="messaggio"
+            id="messaggio"></textarea>
+        </div>
+
+        <div>
+          <label for="consenso">Accetto di essere ricontattato</label>
+          <input type="checkbox" id="consenso" name="consenso" required>
+        </div>
+
+        <div>
+          <button type="submit">Invia</button>
+        </div>
+
+      </form>
+
+      <p>Profilo GitHub: <a href="https://github.com/gianlucalucaluca">https://github.com/gianlucalucaluca</a></p>
+
+      <p>Profilo Linkedin: <a href="#">linkedin.com/in/gianlucafatigati</a></p>
+    </section>
+  </main>
+
+
+  <footer id="site-footer">
+    <p>&copy; 2026 Gianluca Fatigati</p>
+  </footer>
+
+
+</body>
+
+</html>
