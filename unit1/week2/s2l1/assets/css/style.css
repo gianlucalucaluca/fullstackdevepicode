@@ -1,0 +1,143 @@
+/* Reset minimo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  background: #fff8e1;
+  color: #1a1a1a;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header brand */
+.brand {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-logo {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #ffd54f;
+}
+
+.brand-divider {
+  width: 1px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.brand-context {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+/* Hero */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.hero {
+  max-width: 640px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.console-banner {
+  background: #1a1a1a;
+  color: #f5f5f5;
+  border-radius: 12px;
+  padding: 20px 24px 20px 56px;
+  font-family: "SF Mono", Monaco, Menlo, Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+  text-align: left;
+}
+
+.console-banner::before {
+  content: "›_";
+  color: #ffd54f;
+  font-size: 22px;
+  font-weight: 700;
+  position: absolute;
+  left: 24px;
+  top: 18px;
+}
+
+.console-banner code {
+  background: rgba(255, 213, 79, 0.15);
+  color: #ffd54f;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.hint {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #777;
+}
+
+.hint code {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: "SF Mono", Monaco, Menlo, Consolas, monospace;
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 13px;
+  color: #666;
+}
+
+footer strong {
+  color: #1a1a1a;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 28px;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+}
