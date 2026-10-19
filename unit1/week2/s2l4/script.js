@@ -24,7 +24,7 @@ console.log(area(3, 4));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 function sommaPazza(a, b) {
-   if (a === b) { return (a + b) * 3 };
+   if (a === b) { return (a + b) * 3; }
    return a + b;
 }
 console.log(sommaPazza(2, 3));
@@ -51,6 +51,13 @@ console.log(distanzaDa19(25));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function dentroIntervallo(n) {
+   return (n >= 20 && n <= 100) || n === 400;
+}
+console.log(dentroIntervallo(50));
+console.log(dentroIntervallo(20));
+console.log(dentroIntervallo(400));
+console.log(dentroIntervallo(10));
 
 /* ESERCIZIO 5 — epify
    Funzione epify(testo): aggiunge "EPICODE " davanti.
@@ -59,12 +66,25 @@ console.log(distanzaDa19(25));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function epify(testo) {
+   if (testo.startsWith('EPICODE')) {
+      return testo;
+   }
+   return 'EPICODE ' + testo;
+}
+console.log(epify('Full Stack 2026'));
+
 
 /* ESERCIZIO 6 — divisibilePer3o7
    Funzione divisibilePer3o7(n): true se n positivo E divisibile per 3 O per 7.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function divisibilePer3o7(n) {
+   return n > 0 && (n % 3 === 0 || n % 7 === 0); 
+}
+console.log(divisibilePer3o7(21));
+console.log(divisibilePer3o7(-9));
 
 /* ESERCIZIO 7 — invertiStringa
    Funzione invertiStringa(testo): ritorna la stringa invertita.
@@ -73,6 +93,7 @@ console.log(distanzaDa19(25));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
 
 /* ESERCIZIO 8 — inizialiMaiuscole
    Funzione inizialiMaiuscole(frase): metti in maiuscolo la prima lettera di ogni parola.
