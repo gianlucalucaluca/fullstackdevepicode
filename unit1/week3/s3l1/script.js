@@ -117,7 +117,11 @@ console.log(`copia`, copia);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const frutti = ['mela', 'banana'];
+const verdure = ['carota', 'spinaci'];
+const cibo = [...frutti, ...verdure];
 
+console.log(cibo);
 
 /* ESERCIZIO 6 — Spread su oggetto
    prodotto = { nome: "Cuffie", prezzo: 79.99 }
@@ -126,6 +130,10 @@ console.log(`copia`, copia);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const prodotto = { nome: 'Cuffie, prezzo: 79.99' };
+const nuovoProdotto = { ...prodotto, disponibile: true };
+
+console.log(nuovoProdotto);
 
 /* ESERCIZIO 7 — forEach
    Stampa tutti gli utenti nel formato "- Nome Cognome (città)".
@@ -133,6 +141,9 @@ console.log(`copia`, copia);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+utenti.forEach(u => {
+	console.log(`- ${u.nome} ${u.cognome} (${u.città})`);
+});
 
 /* ESERCIZIO 8 — map a stringhe
    Usa map per creare nomiCompleti = ["Mario Rossi", "Anna Bianchi", ...].
@@ -140,6 +151,8 @@ console.log(`copia`, copia);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const nomiCompleti = utenti.map(u => `${u.nome} ${u.cognome}`);
+console.log(nomiCompleti);
 
 /* ESERCIZIO 9 — map a oggetti
    Usa map per creare utentiPlus: array di oggetti dove ogni utente ha tutte
@@ -150,6 +163,12 @@ console.log(`copia`, copia);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const utentiPlus = utenti.map(u => ({
+...u,
+descrizione: `${u.nome} ${u.cognome}, ${u.città}`,
+}));
+
+console.log(utentiPlus[0]);
 
 /* ESERCIZIO 10 — filter attivi
    Usa filter per ottenere solo gli utenti con attivo: true.
