@@ -89,11 +89,10 @@ nav a:hover {
 nav ul {
   list-style: none;
   padding: 0;
-  text-align: center;
-}
-
-nav li {
-  display: inline-block;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
 }
 
 .project {
