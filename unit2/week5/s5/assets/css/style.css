@@ -95,9 +95,15 @@ nav ul {
   gap: 4px;
 }
 
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
 .project {
   padding: 20px;
-  margin-bottom: 16px;
+  flex: 1 1 260px;
   border-left: 4px solid hsl(220, 60%, 30%);
 }
 
