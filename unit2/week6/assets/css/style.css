@@ -1,0 +1,11 @@
+body.dark {
+  --bs-body-bg: #1e1e1e; 
+  --bs-body-color: #f1f1f1; 
+  --bs-secondary-color: #adb5bd;
+  --bs-tertiary-bg-rgb: 43, 43, 43; 
+  --bs-border-color: #444; 
+}
+
+body.dark .btn-close {
+  filter: invert(1);
+}
